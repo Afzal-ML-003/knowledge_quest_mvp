@@ -44,7 +44,7 @@ LEVELS = [
     },
 ]
 
-CATEGORIES = [
+KNOWLEDGE_CATEGORIES = [
     "Mixed",
     "Science",
     "Geography",
@@ -53,6 +53,34 @@ CATEGORIES = [
     "Nature",
     "General Knowledge",
 ]
+
+# Backward-compatible alias (existing UI code imports CATEGORIES for Knowledge Challenge)
+CATEGORIES = KNOWLEDGE_CATEGORIES
+
+LOGIC_CATEGORIES = [
+    "Mixed",
+    "Number Sequence",
+    "Pattern Recognition",
+    "Odd One Out",
+    "Logical Deduction",
+    "Math Reasoning",
+]
+
+MODE_CATEGORIES = {
+    "knowledge": KNOWLEDGE_CATEGORIES,
+    "logic": LOGIC_CATEGORIES,
+}
+
+MODE_LABELS = {
+    "knowledge": "Knowledge Challenge",
+    "logic": "Logic Lab",
+}
+
+LANGUAGES = {
+    "en": "English",
+    "ur": "Roman Urdu",
+}
+DEFAULT_LANGUAGE = "en"
 
 TOTAL_LEVELS = len(LEVELS)
 
