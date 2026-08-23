@@ -17,13 +17,15 @@ Design notes:
 import time
 import streamlit as st
 
-from game.levels import get_level, TOTAL_LEVELS
+from game.levels import get_level, TOTAL_LEVELS, DEFAULT_LANGUAGE
 from game.player import STARTING_LIVES, STARTING_HINTS
 from game.scoring import compute_score, xp_from_score
 from game.modes.knowledge import KnowledgeChallengeMode
+from game.modes.logic import LogicLabMode
 
 MODES = {
     "knowledge": KnowledgeChallengeMode(),
+    "logic": LogicLabMode(),
 }
 
 
@@ -31,6 +33,7 @@ def _fresh_state() -> dict:
     return {
         "screen": "menu",           # menu | setup | playing | level_complete | results
         "mode": "knowledge",
+        "language": DEFAULT_LANGUAGE,   # "en" | "ur"
         "category": "Mixed",
         "level_number": 1,
 
@@ -85,6 +88,20 @@ def go_to_menu():
     gs()["screen"] = "menu"
 
 
+def set_language(language: str):
+    if language not in ("en", "ur"):
+        return
+    gs()["language"] = language
+
+
+def set_mode(mode: str):
+    if mode not in MODES:
+        return
+    state = gs()
+    state["mode"] = mode
+    state["category"] = "Mixed"  # category sets differ between modes; avoid an invalid carryover
+
+
 def start_game(category: str):
     state = gs()
     state["category"] = category
@@ -97,7 +114,9 @@ def start_level(level_number: int):
     level_cfg = get_level(level_number)
     mode = MODES[state["mode"]]
 
-    questions = mode.generate_level(level_number, state["category"], state["used_question_ids"])
+    questions = mode.generate_level(
+        level_number, state["category"], state["used_question_ids"], language=state["language"]
+    )
     if not questions:
         # Safety net: should not happen given question_bank fallbacks, but
         # never let the game hang with an empty level.
