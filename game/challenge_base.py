@@ -42,5 +42,5 @@ class ChallengeMode(ABC):
     description: str = ""
 
     @abstractmethod
-    def generate_level(self, level_number: int, category: str, used_ids: set) -> list:
+    def generate_level(self, level_number: int, category: str, used_ids: set, language: str = "en") -> list:
         raise NotImplementedError
