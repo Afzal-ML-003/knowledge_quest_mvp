@@ -3,7 +3,9 @@
 import streamlit as st
 
 from game import state as gstate
-from game.levels import CATEGORIES, get_level, TOTAL_LEVELS
+from game.levels import (
+    get_level, TOTAL_LEVELS, MODE_CATEGORIES, MODE_LABELS, LANGUAGES,
+)
 from game.player import get_rank
 from ui.components import (
     render_status_bar, render_quest_trail, render_level_dots,
@@ -13,6 +15,8 @@ from ui.components import (
 
 # ---------------------------------------------------------------- MENU
 def render_menu():
+    state = gstate.gs()
+
     st.markdown(
         """
         <div class="kq-hero">
@@ -28,12 +32,37 @@ def render_menu():
 
     st.markdown('<div class="kq-card">', unsafe_allow_html=True)
     st.markdown(
-        "5 levels. 6 categories. One trail of questions that gets harder "
-        "the further you go — knowledge, logic, and quick thinking, "
-        "all in one round."
+        "5 levels. Two challenge modes. One trail of questions that gets "
+        "harder the further you go."
     )
     st.markdown("</div>", unsafe_allow_html=True)
 
+    st.markdown('<p style="font-size:0.8rem;color:var(--kq-text-dim);margin-bottom:0.3rem;">LANGUAGE</p>',
+                unsafe_allow_html=True)
+    lang_cols = st.columns(2)
+    for i, (code, label) in enumerate(LANGUAGES.items()):
+        with lang_cols[i]:
+            is_selected = state["language"] == code
+            btn_label = f"✓ {label}" if is_selected else label
+            if st.button(btn_label, key=f"lang_{code}",
+                         type="primary" if is_selected else "secondary"):
+                gstate.set_language(code)
+                st.rerun()
+
+    st.markdown('<p style="font-size:0.8rem;color:var(--kq-text-dim);margin:0.7rem 0 0.3rem 0;">MODE</p>',
+                unsafe_allow_html=True)
+    mode_cols = st.columns(2)
+    mode_icons = {"knowledge": "🧠", "logic": "🧩"}
+    for i, (mode_key, label) in enumerate(MODE_LABELS.items()):
+        with mode_cols[i]:
+            is_selected = state["mode"] == mode_key
+            btn_label = f"✓ {mode_icons[mode_key]} {label}" if is_selected else f"{mode_icons[mode_key]} {label}"
+            if st.button(btn_label, key=f"mode_{mode_key}",
+                         type="primary" if is_selected else "secondary"):
+                gstate.set_mode(mode_key)
+                st.rerun()
+
+    st.markdown("<br>", unsafe_allow_html=True)
     if st.button("🚀 Start Quest", type="primary", key="menu_start"):
         gstate.go_to_setup()
         st.rerun()
@@ -44,20 +73,30 @@ def render_menu():
             "- You have **3 lives** for the whole run — a wrong answer costs one.\n"
             "- You get **3 hints** — each removes one wrong option, at half points for that question.\n"
             "- From Level 2 onward, questions are timed. Answer fast for a speed bonus.\n"
-            "- Build a streak of 3+ correct answers in a row for bonus points."
+            "- Build a streak of 3+ correct answers in a row for bonus points.\n"
+            "- **Knowledge Challenge** tests general knowledge across 6 categories.\n"
+            "- **Logic Lab** tests sequences, patterns, deduction and math reasoning."
         )
 
 
 # ---------------------------------------------------------------- SETUP
 def render_setup():
+    state = gstate.gs()
+    mode_categories = MODE_CATEGORIES[state["mode"]]
+
+    st.markdown(
+        f'<p style="font-size:0.8rem;color:var(--kq-text-dim);margin-bottom:0.1rem;">'
+        f'{MODE_LABELS[state["mode"]].upper()} · {LANGUAGES[state["language"]].upper()}</p>',
+        unsafe_allow_html=True,
+    )
     st.markdown('<h2 class="kq-display">Choose your category</h2>', unsafe_allow_html=True)
     st.caption("Mixed draws from every category. Pick a specialty to focus your run.")
 
-    if "setup_category" not in st.session_state:
+    if "setup_category" not in st.session_state or st.session_state.setup_category not in mode_categories:
         st.session_state.setup_category = "Mixed"
 
     cols = st.columns(2)
-    for i, cat in enumerate(CATEGORIES):
+    for i, cat in enumerate(mode_categories):
         col = cols[i % 2]
         with col:
             is_selected = st.session_state.setup_category == cat
