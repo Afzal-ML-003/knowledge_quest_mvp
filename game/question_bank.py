@@ -1,8 +1,14 @@
 """
-Question bank: loads question data from data/questions.json and selects
-questions for a level while avoiding repeats within a session.
+Question bank: loads question data from data/questions_en.json (English) or
+data/questions.json (Roman Urdu), and selects questions for a level while
+avoiding repeats within a session.
 
-Kept separate from game logic so the content file can grow to hundreds of
+Both language files share identical question `id`s in the same order, so
+anti-repetition (used_ids) works correctly regardless of which language is
+active - switching language mid-session still avoids repeats correctly,
+since a given id represents "the same question" in either language.
+
+Kept separate from game logic so the content files can grow to hundreds of
 questions without touching this module.
 """
 
@@ -10,68 +16,99 @@ import json
 import random
 from pathlib import Path
 
-DATA_PATH = Path(__file__).resolve().parent.parent / "data" / "questions.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
-_CACHE = None
+LANGUAGE_FILES = {
+    "en": DATA_DIR / "questions_en.json",
+    "ur": DATA_DIR / "questions.json",
+}
+DEFAULT_LANGUAGE = "en"
+
+_CACHE = {}  # language -> list of question dicts
 
 
-def _load_all():
-    global _CACHE
-    if _CACHE is None:
+def _load_all(language: str = DEFAULT_LANGUAGE):
+    if language not in LANGUAGE_FILES:
+        raise ValueError(f"Unknown language '{language}'. Expected one of {list(LANGUAGE_FILES)}.")
+
+    if language not in _CACHE:
+        path = LANGUAGE_FILES[language]
         try:
-            with open(DATA_PATH, "r", encoding="utf-8") as f:
+            with open(path, "r", encoding="utf-8") as f:
                 payload = json.load(f)
-            _CACHE = payload.get("questions", [])
+            _CACHE[language] = payload.get("questions", [])
         except (FileNotFoundError, json.JSONDecodeError) as e:
             raise RuntimeError(
-                f"Could not load question bank from {DATA_PATH}: {e}"
+                f"Could not load question bank from {path}: {e}"
             ) from e
-    return _CACHE
+    return _CACHE[language]
 
 
-def all_categories():
-    return sorted({q["category"] for q in _load_all()})
+def all_categories(mode: str = "knowledge", language: str = DEFAULT_LANGUAGE):
+    return sorted({q["category"] for q in _load_all(language) if q.get("mode", "knowledge") == mode})
 
 
-def select_questions(category: str, difficulty: str, count: int, used_ids: set) -> list:
+def select_questions(mode: str, category: str, difficulty: str, count: int,
+                      used_ids: set, language: str = DEFAULT_LANGUAGE) -> list:
     """
-    Select up to `count` questions matching difficulty (and category, unless
-    category == "Mixed"), preferring ones not already in used_ids.
+    Select up to `count` questions for the given mode and language, matching
+    difficulty (and category, unless category == "Mixed"), preferring ones
+    not already in used_ids.
 
-    Fallback order if the ideal pool is too small (keeps the game from
-    crashing or stalling on a sparse dataset):
-      1. Unused questions matching category + difficulty
-      2. Any questions (including previously used) matching category + difficulty
-      3. Unused questions matching difficulty only (any category)
-      4. Any questions matching difficulty only
+    `mode` is a hard constraint: a Logic Lab round will never pull a
+    Knowledge Challenge question, even as a last-resort fallback. Category
+    and difficulty degrade gracefully if the ideal pool is too small, so a
+    sparse dataset never crashes or stalls the game:
+      1. Unused, same mode + category + difficulty
+      2. Any (incl. previously used), same mode + category + difficulty
+      3. Unused, same mode + difficulty (any category within that mode)
+      4. Any, same mode + difficulty
+      5. Unused, same mode only (any difficulty) - final safety net
+      6. Any, same mode only
     """
-    all_q = _load_all()
+    all_q = _load_all(language)
+    mode_pool = [q for q in all_q if q.get("mode", "knowledge") == mode]
 
-    def matches(q, use_category, use_difficulty_only=False):
-        if q["difficulty"] != difficulty:
+    def matches(q, use_category, use_difficulty=True):
+        if use_difficulty and q["difficulty"] != difficulty:
             return False
         if use_category and category != "Mixed" and q["category"] != category:
             return False
         return True
 
-    pool_unused_cat = [q for q in all_q if matches(q, True) and q["id"] not in used_ids]
-    if len(pool_unused_cat) >= count:
-        return random.sample(pool_unused_cat, count)
+    def pick(pool_fn, use_category, use_difficulty=True):
+        unused = [q for q in mode_pool if pool_fn(q, use_category, use_difficulty) and q["id"] not in used_ids]
+        if len(unused) >= count:
+            return random.sample(unused, count)
+        return None
 
-    pool_any_cat = [q for q in all_q if matches(q, True)]
+    result = pick(matches, use_category=True)
+    if result is not None:
+        return result
+
+    pool_any_cat = [q for q in mode_pool if matches(q, True)]
     if len(pool_any_cat) >= count:
-        # prioritize unused first, fill remainder with used ones
         rest = [q for q in pool_any_cat if q["id"] not in used_ids]
         used = [q for q in pool_any_cat if q["id"] in used_ids]
         random.shuffle(rest)
         random.shuffle(used)
-        combined = rest + used
-        return combined[:count]
+        return (rest + used)[:count]
 
-    pool_unused_diff = [q for q in all_q if matches(q, False) and q["id"] not in used_ids]
-    if len(pool_unused_diff) >= count:
-        return random.sample(pool_unused_diff, count)
+    result = pick(matches, use_category=False)
+    if result is not None:
+        return result
 
-    pool_any_diff = [q for q in all_q if matches(q, False)]
-    random.shuffle(pool_any_diff)
-    return pool_any_diff[:count]
+    pool_any_diff = [q for q in mode_pool if matches(q, False)]
+    if len(pool_any_diff) >= count:
+        rest = [q for q in pool_any_diff if q["id"] not in used_ids]
+        used = [q for q in pool_any_diff if q["id"] in used_ids]
+        random.shuffle(rest)
+        random.shuffle(used)
+        return (rest + used)[:count]
+
+    result = pick(matches, use_category=False, use_difficulty=False)
+    if result is not None:
+        return result
+
+    random.shuffle(mode_pool)
+    return mode_pool[:count]
