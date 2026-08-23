@@ -20,8 +20,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from game.scoring import compute_score, xp_from_score, BASE_POINTS
 from game.player import get_rank, RANKS
-from game.levels import LEVELS, get_level, TOTAL_LEVELS, CATEGORIES
+from game.levels import (
+    LEVELS, get_level, TOTAL_LEVELS, CATEGORIES, KNOWLEDGE_CATEGORIES,
+    LOGIC_CATEGORIES, MODE_CATEGORIES, MODE_LABELS, LANGUAGES,
+)
 from game.question_bank import select_questions, all_categories
+from game.modes.knowledge import KnowledgeChallengeMode
+from game.modes.logic import LogicLabMode
 
 
 # ---------------------------------------------------------------- scoring
@@ -134,20 +139,20 @@ def test_categories_include_mixed():
 
 # ---------------------------------------------------------------- question bank
 def test_question_bank_has_all_categories():
-    cats = all_categories()
+    cats = all_categories(mode="knowledge")
     for c in CATEGORIES:
         if c != "Mixed":
             assert c in cats, f"missing category {c} in data"
 
 
 def test_select_questions_respects_difficulty():
-    qs = select_questions("Mixed", "easy", 5, used_ids=set())
+    qs = select_questions(mode="knowledge", category="Mixed", difficulty="easy", count=5, used_ids=set())
     assert len(qs) == 5
     assert all(q["difficulty"] == "easy" for q in qs)
 
 
 def test_select_questions_respects_category():
-    qs = select_questions("Science", "medium", 3, used_ids=set())
+    qs = select_questions(mode="knowledge", category="Science", difficulty="medium", count=3, used_ids=set())
     assert len(qs) == 3
     assert all(q["category"] == "Science" for q in qs)
 
@@ -155,24 +160,111 @@ def test_select_questions_respects_category():
 def test_select_questions_avoids_repeats_when_pool_allows():
     used = set()
     for _ in range(3):
-        qs = select_questions("Mixed", "hard", 5, used_ids=used)
+        qs = select_questions(mode="knowledge", category="Mixed", difficulty="hard", count=5, used_ids=used)
         ids = {q["id"] for q in qs}
         assert ids.isdisjoint(used), "should not repeat questions while pool has unused ones"
         used |= ids
 
 
+def test_select_questions_never_mixes_modes():
+    # Even with category="Mixed", a Logic Lab round must never draw a Knowledge question.
+    for _ in range(5):
+        qs = select_questions(mode="logic", category="Mixed", difficulty="easy", count=5, used_ids=set())
+        assert all(q["mode"] == "logic" for q in qs), "logic mode leaked a knowledge question"
+
+    for _ in range(5):
+        qs = select_questions(mode="knowledge", category="Mixed", difficulty="easy", count=5, used_ids=set())
+        assert all(q["mode"] == "knowledge" for q in qs), "knowledge mode leaked a logic question"
+
+
+def test_select_questions_logic_lab_category_filter():
+    qs = select_questions(mode="logic", category="Number Sequence", difficulty="medium", count=2, used_ids=set())
+    assert len(qs) == 2
+    assert all(q["category"] == "Number Sequence" and q["mode"] == "logic" for q in qs)
+
+
 def test_select_questions_never_crashes_on_depleted_pool():
     # Exhaust a whole category+difficulty pool, then request more anyway.
-    used = {q["id"] for q in select_questions("Science", "easy", 3, used_ids=set())}
-    qs = select_questions("Science", "easy", 3, used_ids=used)
+    used = {q["id"] for q in select_questions(mode="knowledge", category="Science", difficulty="easy", count=3, used_ids=set())}
+    qs = select_questions(mode="knowledge", category="Science", difficulty="easy", count=3, used_ids=used)
     assert len(qs) == 3  # falls back to reusing questions rather than crashing
 
 
 def test_question_options_have_valid_correct_index():
     from game.question_bank import _load_all
-    for q in _load_all():
-        assert 0 <= q["correct"] < len(q["options"])
-        assert len(q["options"]) == 4
+    for lang in ("en", "ur"):
+        for q in _load_all(lang):
+            assert 0 <= q["correct"] < len(q["options"])
+            assert len(q["options"]) == 4
+
+
+# ---------------------------------------------------------------- modes / registry
+def test_mode_category_registry_matches_labels():
+    assert set(MODE_CATEGORIES.keys()) == set(MODE_LABELS.keys()) == {"knowledge", "logic"}
+    assert "Mixed" in KNOWLEDGE_CATEGORIES
+    assert "Mixed" in LOGIC_CATEGORIES
+    assert KNOWLEDGE_CATEGORIES != LOGIC_CATEGORIES
+
+
+def test_logic_lab_generates_full_level():
+    mode = LogicLabMode()
+    level_cfg = get_level(3)
+    qs = mode.generate_level(3, "Mixed", used_ids=set(), language="en")
+    assert len(qs) == level_cfg["questions_per_level"]
+    assert all(q["mode"] == "logic" and q["difficulty"] == level_cfg["difficulty"] for q in qs)
+
+
+def test_logic_lab_never_returns_knowledge_questions():
+    mode = LogicLabMode()
+    for level_num in range(1, TOTAL_LEVELS + 1):
+        qs = mode.generate_level(level_num, "Mixed", used_ids=set(), language="en")
+        assert all(q["mode"] == "logic" for q in qs)
+
+
+def test_knowledge_mode_never_returns_logic_questions():
+    mode = KnowledgeChallengeMode()
+    for level_num in range(1, TOTAL_LEVELS + 1):
+        qs = mode.generate_level(level_num, "Mixed", used_ids=set(), language="en")
+        assert all(q["mode"] == "knowledge" for q in qs)
+
+
+# ---------------------------------------------------------------- language
+def test_both_language_files_load():
+    en = select_questions(mode="knowledge", category="Mixed", difficulty="easy", count=3, used_ids=set(), language="en")
+    ur = select_questions(mode="knowledge", category="Mixed", difficulty="easy", count=3, used_ids=set(), language="ur")
+    assert len(en) == 3 and len(ur) == 3
+
+
+def test_language_ids_align_across_files():
+    from game.question_bank import _load_all
+    en_ids = {q["id"] for q in _load_all("en")}
+    ur_ids = {q["id"] for q in _load_all("ur")}
+    assert en_ids == ur_ids, "English and Roman Urdu question banks must have identical id sets"
+
+
+def test_language_switch_preserves_anti_repeat():
+    # Answering in English then switching to Urdu should still avoid repeats,
+    # since ids match across both language files.
+    used = {q["id"] for q in select_questions(mode="knowledge", category="Science", difficulty="easy", count=3, used_ids=set(), language="en")}
+    ur_followup = select_questions(mode="knowledge", category="Science", difficulty="easy", count=3, used_ids=used, language="ur")
+    ur_ids = {q["id"] for q in ur_followup}
+    # Science+easy pool has exactly 3 questions, so with 3 used it must fall back
+    # to reusing rather than crash - but should still return valid Science/easy items.
+    assert len(ur_ids) == 3
+    assert all(q["difficulty"] == "easy" for q in ur_followup)
+
+
+def test_invalid_language_raises():
+    try:
+        select_questions(mode="knowledge", category="Mixed", difficulty="easy", count=1, used_ids=set(), language="fr")
+        assert False, "expected ValueError"
+    except ValueError:
+        pass
+
+
+def test_language_registry_has_english_and_urdu():
+    assert LANGUAGES.get("en") == "English"
+    assert LANGUAGES.get("ur") == "Roman Urdu"
 
 
 ALL_TESTS = [v for k, v in list(globals().items()) if k.startswith("test_") and callable(v)]
