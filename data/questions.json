@@ -4,22 +4,23 @@
       "id": "q0001",
       "category": "Science",
       "difficulty": "easy",
-      "question": "What gas do plants absorb from the air to make food?",
+      "question": "Paudhay khana banane ke liye hawa se kaunsi gas jazb (absorb) karte hain?",
       "options": [
         "Oxygen",
-        "Carbon dioxide",
+        "Carbon Dioxide",
         "Nitrogen",
         "Hydrogen"
       ],
       "correct": 1,
-      "explanation": "Plants use carbon dioxide plus sunlight and water to produce glucose through photosynthesis.",
-      "hint": "Think about what humans breathe out."
+      "explanation": "Paudhay photosynthesis ke zariye carbon dioxide, sunlight aur pani ka istemal karke glucose banate hain.",
+      "hint": "Sochiye insan saans lete waqt kya bahar chhorte hain.",
+      "mode": "knowledge"
     },
     {
       "id": "q0002",
       "category": "Science",
       "difficulty": "easy",
-      "question": "What is the chemical symbol for water?",
+      "question": "Paani ka chemical symbol kya hai?",
       "options": [
         "H2O",
         "CO2",
@@ -27,44 +28,47 @@
         "NaCl"
       ],
       "correct": 0,
-      "explanation": "Water is made of two hydrogen atoms bonded to one oxygen atom.",
-      "hint": "It has two types of atoms."
+      "explanation": "Paani do hydrogen atoms aur ek oxygen atom se milkar banta hai.",
+      "hint": "Is mein do tarah ke atoms shamil hain.",
+      "mode": "knowledge"
     },
     {
       "id": "q0003",
       "category": "Science",
       "difficulty": "easy",
-      "question": "Which organ pumps blood through the human body?",
+      "question": "Insani jism mein khoon ko pump kaunsa organ karta hai?",
       "options": [
-        "Lungs",
-        "Liver",
-        "Heart",
-        "Kidney"
+        "Phephray (Lungs)",
+        "Jigar (Liver)",
+        "Dil (Heart)",
+        "Gurda (Kidney)"
       ],
       "correct": 2,
-      "explanation": "The heart is a muscular pump that circulates blood through the body.",
-      "hint": "It beats roughly once a second."
+      "explanation": "Dil ek pathon wala pump hai jo khoon ko poore jism mein gardish karta hai.",
+      "hint": "Yeh taqreeban har second mein dhadakta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0004",
       "category": "Science",
       "difficulty": "medium",
-      "question": "What is the powerhouse of the cell?",
+      "question": "Cell ka 'powerhouse' kise kaha jata hai?",
       "options": [
         "Nucleus",
         "Ribosome",
         "Mitochondria",
-        "Golgi apparatus"
+        "Golgi Apparatus"
       ],
       "correct": 2,
-      "explanation": "Mitochondria generate most of the cell's ATP energy supply through respiration.",
-      "hint": "It's known for producing energy."
+      "explanation": "Mitochondria respiration ke zariye cell ke liye zyada tar ATP energy banata hai.",
+      "hint": "Yeh energy paida karne ke liye mashhoor hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0005",
       "category": "Science",
       "difficulty": "medium",
-      "question": "Which element has the atomic number 1?",
+      "question": "Atomic number 1 kis element ka hai?",
       "options": [
         "Helium",
         "Hydrogen",
@@ -72,29 +76,31 @@
         "Carbon"
       ],
       "correct": 1,
-      "explanation": "Hydrogen has one proton, giving it atomic number 1 and making it the lightest element.",
-      "hint": "It's the lightest and most abundant element in the universe."
+      "explanation": "Hydrogen mein ek proton hota hai, is liye iska atomic number 1 hai aur yeh sabse halka element hai.",
+      "hint": "Yeh kainaat ka sabse halka aur sabse zyada paya jane wala element hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0006",
       "category": "Science",
       "difficulty": "medium",
-      "question": "What type of bond involves sharing electrons between atoms?",
+      "question": "Kaunsa bond do atoms ke darmiyan electrons share karne se banta hai?",
       "options": [
-        "Ionic bond",
-        "Covalent bond",
-        "Metallic bond",
-        "Hydrogen bond"
+        "Ionic Bond",
+        "Covalent Bond",
+        "Metallic Bond",
+        "Hydrogen Bond"
       ],
       "correct": 1,
-      "explanation": "A covalent bond forms when two atoms share one or more pairs of electrons.",
-      "hint": "Think 'co-' as in cooperating."
+      "explanation": "Covalent bond tab banta hai jab do atoms ek ya zyada electron pairs share karte hain.",
+      "hint": "'Co-' ka matlab hota hai milkar kaam karna.",
+      "mode": "knowledge"
     },
     {
       "id": "q0007",
       "category": "Science",
       "difficulty": "hard",
-      "question": "Which subatomic particle has no electric charge?",
+      "question": "Kaunsa subatomic particle koi electric charge nahi rakhta?",
       "options": [
         "Proton",
         "Electron",
@@ -102,14 +108,15 @@
         "Positron"
       ],
       "correct": 2,
-      "explanation": "Neutrons are electrically neutral particles found in an atom's nucleus alongside protons.",
-      "hint": "Its name hints at 'neutral'."
+      "explanation": "Neutron ek electrically neutral particle hai jo atom ke nucleus mein proton ke saath paya jata hai.",
+      "hint": "Iska naam 'neutral' se milta julta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0008",
       "category": "Science",
       "difficulty": "hard",
-      "question": "What is the name of the enzyme that unwinds DNA during replication?",
+      "question": "DNA replication ke dauran DNA ko unwind karne wala enzyme kaunsa hai?",
       "options": [
         "Ligase",
         "Helicase",
@@ -117,74 +124,79 @@
         "Primase"
       ],
       "correct": 1,
-      "explanation": "Helicase unwinds the double helix by breaking hydrogen bonds between base pairs.",
-      "hint": "Its name comes from 'helix'."
+      "explanation": "Helicase double helix ko unwind karta hai, base pairs ke darmiyan hydrogen bonds tor kar.",
+      "hint": "Iska naam 'helix' se aata hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0009",
       "category": "Science",
       "difficulty": "hard",
-      "question": "Which law states that energy cannot be created or destroyed?",
+      "question": "Kaunsa law kehta hai ke energy na banayi ja sakti hai na khatam ki ja sakti hai?",
       "options": [
-        "Newton's First Law",
+        "Newton ka Pehla Law",
         "Law of Conservation of Energy",
-        "Boyle's Law",
+        "Boyle ka Law",
         "Law of Inertia"
       ],
       "correct": 1,
-      "explanation": "The First Law of Thermodynamics says total energy in an isolated system stays constant.",
-      "hint": "It's a core rule of thermodynamics."
+      "explanation": "Thermodynamics ka pehla law kehta hai ke isolated system mein total energy hamesha constant rehti hai.",
+      "hint": "Yeh thermodynamics ka ek buniyadi usool hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0010",
       "category": "Science",
       "difficulty": "expert",
-      "question": "What is the Heisenberg Uncertainty Principle primarily about?",
+      "question": "Heisenberg Uncertainty Principle bunyadi taur par kis baare mein hai?",
       "options": [
-        "Speed of light limits",
-        "Simultaneous precision of position and momentum",
-        "Radioactive decay rates",
-        "Entropy always increasing"
+        "Roshni ki raftaar ki hadd",
+        "Position aur momentum ki ek sath sahih maloomat",
+        "Radioactive decay ki raftaar",
+        "Entropy ka hamesha barhna"
       ],
       "correct": 1,
-      "explanation": "It states you cannot simultaneously know a particle's exact position and momentum with full precision.",
-      "hint": "It's a cornerstone of quantum mechanics."
+      "explanation": "Yeh kehta hai ke aap ek particle ki exact position aur momentum ko ek sath poori sahih se nahi jaan sakte.",
+      "hint": "Yeh quantum mechanics ka ek buniyadi usool hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0011",
       "category": "Science",
       "difficulty": "expert",
-      "question": "Which particle is the force carrier for the electromagnetic force?",
+      "question": "Electromagnetic force ke liye force carrier particle kaunsa hai?",
       "options": [
         "Gluon",
         "Photon",
-        "W boson",
+        "W Boson",
         "Graviton"
       ],
       "correct": 1,
-      "explanation": "Photons mediate the electromagnetic force between charged particles.",
-      "hint": "It's also the particle of light."
+      "explanation": "Photons charged particles ke darmiyan electromagnetic force ko carry karte hain.",
+      "hint": "Yeh roshni ka bhi particle hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0012",
       "category": "Science",
       "difficulty": "expert",
-      "question": "What does the Krebs cycle primarily produce for the cell?",
+      "question": "Krebs cycle bunyadi taur par cell ke liye kya paida karta hai?",
       "options": [
         "Glucose",
-        "ATP precursors (NADH/FADH2)",
+        "ATP Precursors (NADH/FADH2)",
         "DNA",
         "Proteins"
       ],
       "correct": 1,
-      "explanation": "The Krebs cycle generates NADH and FADH2, which fuel the electron transport chain to make ATP.",
-      "hint": "It happens inside the mitochondria."
+      "explanation": "Krebs cycle NADH aur FADH2 banata hai, jo electron transport chain ko ATP banane ke liye fuel deta hai.",
+      "hint": "Yeh mitochondria ke andar hota hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0013",
       "category": "Geography",
       "difficulty": "easy",
-      "question": "What is the largest continent by area?",
+      "question": "Rakbay ke lihaz se sabse bara continent kaunsa hai?",
       "options": [
         "Africa",
         "Asia",
@@ -192,14 +204,15 @@
         "Antarctica"
       ],
       "correct": 1,
-      "explanation": "Asia covers about 30% of Earth's land area, making it the largest continent.",
-      "hint": "It's home to more than half the world's population."
+      "explanation": "Asia zameen ke taqreeban 30% hisse par mushtamil hai, jo isay sabse bara continent banata hai.",
+      "hint": "Yahan duniya ki aadhi se zyada aabadi rehti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0014",
       "category": "Geography",
       "difficulty": "easy",
-      "question": "Which river is the longest in the world?",
+      "question": "Duniya ka sabse lamba darya kaunsa hai?",
       "options": [
         "Amazon",
         "Yangtze",
@@ -207,14 +220,15 @@
         "Mississippi"
       ],
       "correct": 2,
-      "explanation": "The Nile, flowing through northeastern Africa, is widely considered the longest river.",
-      "hint": "It flows through Egypt."
+      "explanation": "Nile, jo north-eastern Africa se guzarta hai, aam taur par sabse lamba darya mana jata hai.",
+      "hint": "Yeh Egypt se guzarta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0015",
       "category": "Geography",
       "difficulty": "easy",
-      "question": "What is the capital city of France?",
+      "question": "France ka darul hakoomat (capital) kya hai?",
       "options": [
         "Lyon",
         "Marseille",
@@ -222,14 +236,15 @@
         "Nice"
       ],
       "correct": 2,
-      "explanation": "Paris has been the capital of France for centuries and is its largest city.",
-      "hint": "It's home to the Eiffel Tower."
+      "explanation": "Paris sadiyon se France ka capital raha hai aur iska sabse bara shehar bhi hai.",
+      "hint": "Yahan Eiffel Tower waqay hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0016",
       "category": "Geography",
       "difficulty": "medium",
-      "question": "Which desert is the largest hot desert in the world?",
+      "question": "Duniya ka sabse bara garam sehra (desert) kaunsa hai?",
       "options": [
         "Gobi",
         "Sahara",
@@ -237,14 +252,15 @@
         "Atacama"
       ],
       "correct": 1,
-      "explanation": "The Sahara spans much of North Africa and is the largest hot desert on Earth.",
-      "hint": "It covers most of North Africa."
+      "explanation": "Sahara North Africa ke bare hisse tak phaila hua hai aur yeh duniya ka sabse bara garam sehra hai.",
+      "hint": "Yeh zyada tar North Africa ko cover karta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0017",
       "category": "Geography",
       "difficulty": "medium",
-      "question": "Mount Kilimanjaro is located in which country?",
+      "question": "Mount Kilimanjaro kis mulk mein waqay hai?",
       "options": [
         "Kenya",
         "Tanzania",
@@ -252,14 +268,15 @@
         "Ethiopia"
       ],
       "correct": 1,
-      "explanation": "Kilimanjaro, Africa's tallest peak, is located in northeastern Tanzania.",
-      "hint": "It's the tallest mountain in Africa."
+      "explanation": "Kilimanjaro, jo Africa ki sabse buland choti hai, north-eastern Tanzania mein waqay hai.",
+      "hint": "Yeh Africa ka sabse buland pahar hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0018",
       "category": "Geography",
       "difficulty": "medium",
-      "question": "Which country has the most time zones?",
+      "question": "Kis mulk mein sabse zyada time zones hain?",
       "options": [
         "Russia",
         "USA",
@@ -267,14 +284,15 @@
         "France"
       ],
       "correct": 3,
-      "explanation": "France has 12 time zones due to its many overseas territories around the globe.",
-      "hint": "Think about overseas territories, not just the mainland."
+      "explanation": "France ke paas apne bahar-e-mulk (overseas) ilaqon ki wajah se 12 time zones hain.",
+      "hint": "Sirf mainland nahi balke bahar-e-mulk ilaqon ke baray mein bhi sochiye.",
+      "mode": "knowledge"
     },
     {
       "id": "q0019",
       "category": "Geography",
       "difficulty": "hard",
-      "question": "Which strait separates Europe from Africa at its narrowest point?",
+      "question": "Sabse tang jagah par Europe ko Africa se kaunsi strait alag karti hai?",
       "options": [
         "Strait of Hormuz",
         "Strait of Gibraltar",
@@ -282,14 +300,15 @@
         "Bering Strait"
       ],
       "correct": 1,
-      "explanation": "The Strait of Gibraltar separates Spain from Morocco at its narrowest point.",
-      "hint": "It connects the Atlantic Ocean and the Mediterranean Sea."
+      "explanation": "Strait of Gibraltar sabse tang jagah par Spain ko Morocco se alag karti hai.",
+      "hint": "Yeh Atlantic Ocean ko Mediterranean Sea se jorti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0020",
       "category": "Geography",
       "difficulty": "hard",
-      "question": "What is the smallest sovereign country in the world by area?",
+      "question": "Rakbay ke lihaz se duniya ka sabse chota mulk kaunsa hai?",
       "options": [
         "Monaco",
         "San Marino",
@@ -297,14 +316,15 @@
         "Liechtenstein"
       ],
       "correct": 2,
-      "explanation": "Vatican City, at about 0.49 square kilometers, is the smallest sovereign state.",
-      "hint": "It's an enclave within Rome, Italy."
+      "explanation": "Vatican City, taqreeban 0.49 square kilometers ke sath, sabse chota sovereign state hai.",
+      "hint": "Yeh Rome, Italy ke andar ek enclave hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0021",
       "category": "Geography",
       "difficulty": "hard",
-      "question": "Lake Baikal, the world's deepest lake, is located in which country?",
+      "question": "Lake Baikal, duniya ki sabse gehri jheel, kis mulk mein waqay hai?",
       "options": [
         "Mongolia",
         "Kazakhstan",
@@ -312,29 +332,31 @@
         "China"
       ],
       "correct": 2,
-      "explanation": "Lake Baikal in Siberia, Russia, is both the world's deepest and oldest freshwater lake.",
-      "hint": "It's in Siberia."
+      "explanation": "Siberia, Russia mein waqay Lake Baikal duniya ki sabse gehri aur sabse purani freshwater jheel hai.",
+      "hint": "Yeh Siberia mein hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0022",
       "category": "Geography",
       "difficulty": "expert",
-      "question": "Which two countries share the longest international land border?",
+      "question": "Duniya ki sabse lambi zameeni sarhad (border) kis do mulkon ke darmiyan hai?",
       "options": [
-        "USA and Canada",
-        "Russia and China",
-        "Chile and Argentina",
-        "India and China"
+        "USA aur Canada",
+        "Russia aur China",
+        "Chile aur Argentina",
+        "India aur China"
       ],
       "correct": 0,
-      "explanation": "The USA-Canada border stretches over 8,800 km, the longest in the world.",
-      "hint": "One of these countries is in North America."
+      "explanation": "USA-Canada border 8,800 km se zyada lamba hai, jo duniya mein sabse lamba hai.",
+      "hint": "In mein se ek mulk North America mein hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0023",
       "category": "Geography",
       "difficulty": "expert",
-      "question": "The Danakil Depression, one of the hottest places on Earth, is located in which country?",
+      "question": "Danakil Depression, duniya ki sabse garam jaghon mein se ek, kis mulk mein waqay hai?",
       "options": [
         "Sudan",
         "Ethiopia",
@@ -342,14 +364,15 @@
         "Djibouti"
       ],
       "correct": 1,
-      "explanation": "The Danakil Depression sits in the Afar region of northeastern Ethiopia.",
-      "hint": "It's in the Horn of Africa."
+      "explanation": "Danakil Depression north-eastern Ethiopia ke Afar region mein waqay hai.",
+      "hint": "Yeh Horn of Africa mein hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0024",
       "category": "Geography",
       "difficulty": "expert",
-      "question": "Which meridian is used as the reference for Coordinated Universal Time?",
+      "question": "Coordinated Universal Time ke liye reference kaunsa meridian istemal hota hai?",
       "options": [
         "International Date Line",
         "Prime Meridian (Greenwich)",
@@ -357,14 +380,15 @@
         "Equator"
       ],
       "correct": 1,
-      "explanation": "The Prime Meridian, passing through Greenwich, England, is 0\u00b0 longitude and the time reference.",
-      "hint": "It passes through a London borough."
+      "explanation": "Prime Meridian, jo Greenwich, England se guzarti hai, 0° longitude aur time ka reference hai.",
+      "hint": "Yeh London ke ek borough se guzarti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0025",
       "category": "History",
       "difficulty": "easy",
-      "question": "In which year did World War II end?",
+      "question": "World War II kis saal khatam hui?",
       "options": [
         "1943",
         "1945",
@@ -372,14 +396,15 @@
         "1950"
       ],
       "correct": 1,
-      "explanation": "World War II ended in 1945 with the surrender of Germany and then Japan.",
-      "hint": "It's exactly 80 years before 2025."
+      "explanation": "World War II 1945 mein Germany aur phir Japan ki shikast ke sath khatam hui.",
+      "hint": "Yeh 2025 se theek 80 saal pehle hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0026",
       "category": "History",
       "difficulty": "easy",
-      "question": "Who was the first President of the United States?",
+      "question": "United States ke pehle president kaun thay?",
       "options": [
         "Thomas Jefferson",
         "Abraham Lincoln",
@@ -387,14 +412,15 @@
         "John Adams"
       ],
       "correct": 2,
-      "explanation": "George Washington served as the first U.S. President from 1789 to 1797.",
-      "hint": "His face is on the one-dollar bill."
+      "explanation": "George Washington 1789 se 1797 tak pehle US President rahe.",
+      "hint": "Unki tasveer ek dollar ke note par hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0027",
       "category": "History",
       "difficulty": "easy",
-      "question": "Which ancient civilization built the pyramids of Giza?",
+      "question": "Giza ke pyramids kis qadeem tehzeeb ne banaye?",
       "options": [
         "Romans",
         "Greeks",
@@ -402,14 +428,15 @@
         "Mayans"
       ],
       "correct": 2,
-      "explanation": "The Egyptians built the Giza pyramids as tombs for their pharaohs.",
-      "hint": "Think of the Nile River."
+      "explanation": "Egyptians ne Giza pyramids apne pharaohs ke maqbaron (tombs) ke taur par banaye.",
+      "hint": "Nile darya ke baray mein sochiye.",
+      "mode": "knowledge"
     },
     {
       "id": "q0028",
       "category": "History",
       "difficulty": "medium",
-      "question": "The Berlin Wall fell in which year?",
+      "question": "Berlin Wall kis saal girri?",
       "options": [
         "1987",
         "1989",
@@ -417,14 +444,15 @@
         "1993"
       ],
       "correct": 1,
-      "explanation": "The Berlin Wall fell in November 1989, symbolizing the end of the Cold War divide.",
-      "hint": "It was just before the Soviet Union's collapse."
+      "explanation": "Berlin Wall November 1989 mein giri, jo Cold War ki taqseem ke khatme ki alamat thi.",
+      "hint": "Yeh Soviet Union ke khatme se thora pehle ki baat hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0029",
       "category": "History",
       "difficulty": "medium",
-      "question": "Who wrote the Declaration of Independence?",
+      "question": "Declaration of Independence kisne likha?",
       "options": [
         "Benjamin Franklin",
         "Thomas Jefferson",
@@ -432,14 +460,15 @@
         "Alexander Hamilton"
       ],
       "correct": 1,
-      "explanation": "Thomas Jefferson was the primary author of the U.S. Declaration of Independence.",
-      "hint": "He later became the third U.S. President."
+      "explanation": "Thomas Jefferson US Declaration of Independence ke asal musannif (author) thay.",
+      "hint": "Baad mein woh teesray US President bane.",
+      "mode": "knowledge"
     },
     {
       "id": "q0030",
       "category": "History",
       "difficulty": "medium",
-      "question": "The Renaissance began in which country?",
+      "question": "Renaissance ka aghaz kis mulk mein hua?",
       "options": [
         "France",
         "England",
@@ -447,14 +476,15 @@
         "Spain"
       ],
       "correct": 2,
-      "explanation": "The Renaissance began in Italy in the 14th century, centered in cities like Florence.",
-      "hint": "Think of Florence and the Medici family."
+      "explanation": "Renaissance ka aghaz 14vi century mein Italy mein hua, jiska markaz Florence jaise shehar thay.",
+      "hint": "Florence aur Medici family ke baray mein sochiye.",
+      "mode": "knowledge"
     },
     {
       "id": "q0031",
       "category": "History",
       "difficulty": "hard",
-      "question": "Which treaty officially ended World War I?",
+      "question": "World War I ko rasmi taur par kaunsi treaty ne khatam kiya?",
       "options": [
         "Treaty of Paris",
         "Treaty of Versailles",
@@ -462,14 +492,15 @@
         "Treaty of Tordesillas"
       ],
       "correct": 1,
-      "explanation": "The Treaty of Versailles, signed in 1919, formally ended World War I.",
-      "hint": "It was signed at a famous French palace."
+      "explanation": "1919 mein dastakhat honay wali Treaty of Versailles ne World War I ko rasmi taur par khatam kiya.",
+      "hint": "Yeh ek mashhoor French palace mein dastakhat hui thi.",
+      "mode": "knowledge"
     },
     {
       "id": "q0032",
       "category": "History",
       "difficulty": "hard",
-      "question": "Who was the leader of the Soviet Union during the Cuban Missile Crisis?",
+      "question": "Cuban Missile Crisis ke dauran Soviet Union ka rehnuma kaun tha?",
       "options": [
         "Joseph Stalin",
         "Nikita Khrushchev",
@@ -477,14 +508,15 @@
         "Mikhail Gorbachev"
       ],
       "correct": 1,
-      "explanation": "Nikita Khrushchev led the USSR during the 1962 Cuban Missile Crisis.",
-      "hint": "He also famously banged his shoe at the UN."
+      "explanation": "Nikita Khrushchev ne 1962 ke Cuban Missile Crisis ke dauran USSR ki rehnumai ki.",
+      "hint": "Woh UN mein apna joota maar kar bhi mashhoor huay.",
+      "mode": "knowledge"
     },
     {
       "id": "q0033",
       "category": "History",
       "difficulty": "hard",
-      "question": "The Magna Carta was signed in which year?",
+      "question": "Magna Carta kis saal dastakhat hui?",
       "options": [
         "1066",
         "1215",
@@ -492,14 +524,15 @@
         "1492"
       ],
       "correct": 1,
-      "explanation": "King John of England signed the Magna Carta in 1215, limiting royal power.",
-      "hint": "It's in the early 13th century."
+      "explanation": "England ke King John ne 1215 mein Magna Carta par dastakhat kiye, jisse shahi ikhtiyar mehdood hua.",
+      "hint": "Yeh 13vi century ke shuru mein hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0034",
       "category": "History",
       "difficulty": "expert",
-      "question": "Which empire was ruled by Suleiman the Magnificent?",
+      "question": "Suleiman the Magnificent ne kaunsi saltanat par hukumat ki?",
       "options": [
         "Mongol Empire",
         "Ottoman Empire",
@@ -507,14 +540,15 @@
         "Byzantine Empire"
       ],
       "correct": 1,
-      "explanation": "Suleiman the Magnificent ruled the Ottoman Empire at its territorial and cultural peak.",
-      "hint": "This empire was centered in modern-day Turkey."
+      "explanation": "Suleiman the Magnificent ne Ottoman Empire par uski territorial aur cultural iqbal-mandi ke daur mein hukumat ki.",
+      "hint": "Yeh saltanat aaj kal ke Turkey mein markooz thi.",
+      "mode": "knowledge"
     },
     {
       "id": "q0035",
       "category": "History",
       "difficulty": "expert",
-      "question": "The Peace of Westphalia in 1648 is most associated with the end of which conflict?",
+      "question": "1648 ki Peace of Westphalia sab se zyada kis jang ke khatme se mansoob hai?",
       "options": [
         "Hundred Years' War",
         "Thirty Years' War",
@@ -522,14 +556,15 @@
         "Napoleonic Wars"
       ],
       "correct": 1,
-      "explanation": "The Peace of Westphalia ended the Thirty Years' War and reshaped European sovereignty.",
-      "hint": "The conflict's name matches its duration."
+      "explanation": "Peace of Westphalia ne Thirty Years' War ko khatam kiya aur European sovereignty ko dobara tashkeel diya.",
+      "hint": "Is jang ka naam iski muddat se milta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0036",
       "category": "History",
       "difficulty": "expert",
-      "question": "Who was the last Tsar of Russia?",
+      "question": "Russia ke aakhri Tsar kaun thay?",
       "options": [
         "Alexander III",
         "Nicholas II",
@@ -537,14 +572,15 @@
         "Ivan the Terrible"
       ],
       "correct": 1,
-      "explanation": "Nicholas II was the final Tsar, abdicating in 1917 amid the Russian Revolution.",
-      "hint": "He was overthrown during the 1917 revolution."
+      "explanation": "Nicholas II aakhri Tsar thay, jinhon ne 1917 mein Russian Revolution ke dauran taj chhora.",
+      "hint": "1917 ke inqilab mein unhein takht se hataya gaya.",
+      "mode": "knowledge"
     },
     {
       "id": "q0037",
       "category": "Space",
       "difficulty": "easy",
-      "question": "Which planet is known as the Red Planet?",
+      "question": "Kaunsa sayara 'Red Planet' ke naam se jana jata hai?",
       "options": [
         "Venus",
         "Mars",
@@ -552,29 +588,31 @@
         "Saturn"
       ],
       "correct": 1,
-      "explanation": "Mars appears red due to iron oxide (rust) covering its surface.",
-      "hint": "Its color comes from iron oxide."
+      "explanation": "Mars ki satah par iron oxide (zang) ki wajah se yeh surkh nazar aata hai.",
+      "hint": "Iska rang iron oxide se aata hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0038",
       "category": "Space",
       "difficulty": "easy",
-      "question": "What is the closest star to Earth?",
+      "question": "Zameen ke sabse qareeb sitara kaunsa hai?",
       "options": [
         "Proxima Centauri",
-        "The Sun",
+        "Suraj (The Sun)",
         "Sirius",
         "Betelgeuse"
       ],
       "correct": 1,
-      "explanation": "The Sun is by far the closest star to Earth, about 150 million km away.",
-      "hint": "You can see it every day."
+      "explanation": "Suraj zameen ke sabse qareeb sitara hai, taqreeban 150 million km door.",
+      "hint": "Aap isay har roz dekh sakte hain.",
+      "mode": "knowledge"
     },
     {
       "id": "q0039",
       "category": "Space",
       "difficulty": "easy",
-      "question": "How many planets are in our solar system?",
+      "question": "Hamare solar system mein kitne sayare hain?",
       "options": [
         "7",
         "8",
@@ -582,14 +620,15 @@
         "10"
       ],
       "correct": 1,
-      "explanation": "There are 8 official planets since Pluto was reclassified as a dwarf planet in 2006.",
-      "hint": "Pluto no longer counts."
+      "explanation": "2006 mein Pluto ko dwarf planet qarar diye jane ke baad se 8 rasmi sayare hain.",
+      "hint": "Pluto ab shumar nahi hota.",
+      "mode": "knowledge"
     },
     {
       "id": "q0040",
       "category": "Space",
       "difficulty": "medium",
-      "question": "What is the name of the galaxy that contains our solar system?",
+      "question": "Hamara solar system jis galaxy mein hai uska naam kya hai?",
       "options": [
         "Andromeda",
         "Triangulum",
@@ -597,14 +636,15 @@
         "Whirlpool"
       ],
       "correct": 2,
-      "explanation": "Our solar system resides in the Milky Way, a barred spiral galaxy.",
-      "hint": "It's named after a chocolate bar."
+      "explanation": "Hamara solar system Milky Way mein hai, jo ek barred spiral galaxy hai.",
+      "hint": "Iska naam ek chocolate bar se milta julta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0041",
       "category": "Space",
       "difficulty": "medium",
-      "question": "Which planet has the most moons confirmed as of recent counts?",
+      "question": "Halia surveys ke mutabiq kis sayare ke paas sabse zyada tasdeeq shuda (confirmed) chaand hain?",
       "options": [
         "Jupiter",
         "Saturn",
@@ -612,44 +652,47 @@
         "Neptune"
       ],
       "correct": 1,
-      "explanation": "Saturn has surpassed Jupiter in confirmed moon count in recent astronomical surveys.",
-      "hint": "Think of the planet famous for its rings."
+      "explanation": "Halia astronomical surveys mein Saturn ne confirmed moons ki tadad mein Jupiter ko peechay chor diya hai.",
+      "hint": "Us sayare ke baray mein sochiye jo apne rings ki wajah se mashhoor hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0042",
       "category": "Space",
       "difficulty": "medium",
-      "question": "What force keeps planets in orbit around the Sun?",
+      "question": "Sayaron ko Suraj ke gird orbit mein kaunsi force rakhti hai?",
       "options": [
         "Magnetism",
-        "Gravity",
-        "Nuclear force",
+        "Gravity (Kashish)",
+        "Nuclear Force",
         "Friction"
       ],
       "correct": 1,
-      "explanation": "Gravity from the Sun's mass keeps planets bound in their orbits.",
-      "hint": "It's the same force that pulls you to the ground."
+      "explanation": "Suraj ki mass se paida honay wali gravity sayaron ko unki orbits mein bandhay rakhti hai.",
+      "hint": "Yeh wohi force hai jo aapko zameen ki taraf khaenchti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0043",
       "category": "Space",
       "difficulty": "hard",
-      "question": "What is a light-year a measurement of?",
+      "question": "Light-year kis cheez ka paimana (measurement) hai?",
       "options": [
-        "Time",
-        "Distance",
-        "Brightness",
-        "Speed"
+        "Waqt (Time)",
+        "Fasla (Distance)",
+        "Roshni ki tezi (Brightness)",
+        "Raftaar (Speed)"
       ],
       "correct": 1,
-      "explanation": "A light-year measures the distance light travels in one year, about 9.46 trillion km.",
-      "hint": "Despite the name, it isn't a unit of time."
+      "explanation": "Light-year woh fasla hai jo roshni ek saal mein tay karti hai, taqreeban 9.46 trillion km.",
+      "hint": "Naam ke bawajood, yeh waqt ki wahid nahi hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0044",
       "category": "Space",
       "difficulty": "hard",
-      "question": "Which spacecraft was the first to land humans on the Moon?",
+      "question": "Kaunsa spacecraft pehli baar insanon ko chaand par lekar gaya?",
       "options": [
         "Apollo 8",
         "Apollo 11",
@@ -657,44 +700,47 @@
         "Voyager 1"
       ],
       "correct": 1,
-      "explanation": "Apollo 11 landed Neil Armstrong and Buzz Aldrin on the Moon in July 1969.",
-      "hint": "It's the most famous Apollo mission."
+      "explanation": "Apollo 11 ne July 1969 mein Neil Armstrong aur Buzz Aldrin ko chaand par utara.",
+      "hint": "Yeh sab se mashhoor Apollo mission hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0045",
       "category": "Space",
       "difficulty": "hard",
-      "question": "What is the name of the boundary around a black hole beyond which nothing can escape?",
+      "question": "Black hole ke gird us hadd ka naam kya hai jiske baad kuch bhi bach nahi sakta?",
       "options": [
-        "Photon sphere",
-        "Event horizon",
+        "Photon Sphere",
+        "Event Horizon",
         "Singularity",
-        "Accretion disk"
+        "Accretion Disk"
       ],
       "correct": 1,
-      "explanation": "The event horizon is the point of no return around a black hole.",
-      "hint": "Crossing it means there's no going back."
+      "explanation": "Event horizon black hole ke gird woh point hai jahan se wapsi mumkin nahi.",
+      "hint": "Isse paar karne ke baad wapsi nahi hoti.",
+      "mode": "knowledge"
     },
     {
       "id": "q0046",
       "category": "Space",
       "difficulty": "expert",
-      "question": "What phenomenon causes a pulsar to emit regular pulses of radiation?",
+      "question": "Kaunsi cheez pulsar ko munazzam (regular) radiation ke pulses kharij karne par majboor karti hai?",
       "options": [
-        "Nuclear fusion",
-        "Rapid rotation with beamed radiation",
-        "Solar wind",
-        "Planetary orbit"
+        "Nuclear Fusion",
+        "Tez ghumaav ke sath beamed radiation",
+        "Solar Wind",
+        "Planetary Orbit"
       ],
       "correct": 1,
-      "explanation": "Pulsars are rotating neutron stars whose beamed radiation sweeps past Earth like a lighthouse.",
-      "hint": "Think of a lighthouse beam."
+      "explanation": "Pulsars ghoomtay huay neutron stars hain jinki beamed radiation lighthouse ki tarah zameen ke qareeb se guzarti hai.",
+      "hint": "Ek lighthouse ki roshni ke baray mein sochiye.",
+      "mode": "knowledge"
     },
     {
       "id": "q0047",
       "category": "Space",
       "difficulty": "expert",
-      "question": "Which mission first provided close-up images of Pluto in 2015?",
+      "question": "2015 mein Pluto ki pehli qareebi tasveerein kis mission ne farahim kin?",
       "options": [
         "Voyager 2",
         "New Horizons",
@@ -702,74 +748,79 @@
         "Galileo"
       ],
       "correct": 1,
-      "explanation": "NASA's New Horizons probe flew by Pluto in July 2015, capturing the first detailed images.",
-      "hint": "Its name suggests exploring new frontiers."
+      "explanation": "NASA ka New Horizons probe July 2015 mein Pluto ke paas se guzra aur pehli tafseeli tasveerein li.",
+      "hint": "Iska naam naye ilaqon ki talash ka pata deta hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0048",
       "category": "Space",
       "difficulty": "expert",
-      "question": "What is the term for the theoretical point of infinite density at a black hole's center?",
+      "question": "Black hole ke markaz mein infinite density ke nazriyati (theoretical) point ko kya kehte hain?",
       "options": [
-        "Event horizon",
+        "Event Horizon",
         "Singularity",
         "Nebula",
         "Quasar"
       ],
       "correct": 1,
-      "explanation": "A singularity is the point where a black hole's mass is thought to be infinitely dense.",
-      "hint": "It's where known physics breaks down."
+      "explanation": "Singularity woh point hai jahan black hole ki mass ko infinitely dense mana jata hai.",
+      "hint": "Yahan maloom physics kaam karna chhor deti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0049",
       "category": "Nature",
       "difficulty": "easy",
-      "question": "What do bees primarily collect from flowers?",
+      "question": "Shehad ki makhiyan (bees) phoolon se bunyadi taur par kya jama karti hain?",
       "options": [
-        "Water",
-        "Nectar",
-        "Leaves",
-        "Soil"
+        "Pani (Water)",
+        "Nectar (Ras)",
+        "Pattay (Leaves)",
+        "Mitti (Soil)"
       ],
       "correct": 1,
-      "explanation": "Bees collect nectar from flowers and convert it into honey in the hive.",
-      "hint": "It's the sweet liquid inside flowers."
+      "explanation": "Bees phoolon se nectar jama karti hain aur ise hive mein shehad mein tabdeel karti hain.",
+      "hint": "Yeh phoolon ke andar ka meetha mayya hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0050",
       "category": "Nature",
       "difficulty": "easy",
-      "question": "Which animal is known as the King of the Jungle?",
+      "question": "Kis janwar ko 'King of the Jungle' kaha jata hai?",
       "options": [
-        "Tiger",
-        "Lion",
-        "Elephant",
+        "Tiger (Bagh)",
+        "Lion (Sher)",
+        "Elephant (Hathi)",
         "Gorilla"
       ],
       "correct": 1,
-      "explanation": "The lion is traditionally called the King of the Jungle, though it mainly lives on grasslands.",
-      "hint": "It has a distinctive mane."
+      "explanation": "Lion ko roaytati taur par King of the Jungle kaha jata hai, hala ke yeh zyada tar grasslands mein rehta hai.",
+      "hint": "Iski gardan ke gird ek khaas ayaal (mane) hoti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0051",
       "category": "Nature",
       "difficulty": "easy",
-      "question": "What is the tallest land animal?",
+      "question": "Sabse lamba zameeni janwar kaunsa hai?",
       "options": [
-        "Elephant",
-        "Giraffe",
-        "Horse",
-        "Camel"
+        "Hathi (Elephant)",
+        "Giraffe (Zarafa)",
+        "Ghora (Horse)",
+        "Oont (Camel)"
       ],
       "correct": 1,
-      "explanation": "The giraffe, with its long neck and legs, is the tallest living land animal.",
-      "hint": "Its neck is famously long."
+      "explanation": "Giraffe, apni lambi gardan aur taango ki wajah se, sabse lamba zinda zameeni janwar hai.",
+      "hint": "Iski gardan mashhoor taur par bohat lambi hoti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0052",
       "category": "Nature",
       "difficulty": "medium",
-      "question": "Which process do plants use to convert sunlight into energy?",
+      "question": "Paudhay sunlight ko energy mein tabdeel karne ke liye kaunsa amal (process) istemal karte hain?",
       "options": [
         "Respiration",
         "Photosynthesis",
@@ -777,14 +828,15 @@
         "Germination"
       ],
       "correct": 1,
-      "explanation": "Photosynthesis converts sunlight, water, and CO2 into glucose and oxygen.",
-      "hint": "The word contains 'photo', meaning light."
+      "explanation": "Photosynthesis sunlight, pani aur CO2 ko glucose aur oxygen mein tabdeel karta hai.",
+      "hint": "Is lafz mein 'photo' shamil hai, jiska matlab hai roshni.",
+      "mode": "knowledge"
     },
     {
       "id": "q0053",
       "category": "Nature",
       "difficulty": "medium",
-      "question": "What is the largest species of shark?",
+      "question": "Shark ki sabse bari qisam kaunsi hai?",
       "options": [
         "Great White Shark",
         "Hammerhead Shark",
@@ -792,44 +844,47 @@
         "Tiger Shark"
       ],
       "correct": 2,
-      "explanation": "The whale shark, a filter feeder, is the largest fish species alive today.",
-      "hint": "Despite its size, it's gentle and eats plankton."
+      "explanation": "Whale shark, jo filter feeder hai, aaj ki sabse bari machli (fish) hai.",
+      "hint": "Apne saiz ke bawajood, yeh nihayat naram-mizaj hai aur plankton khati hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0054",
       "category": "Nature",
       "difficulty": "medium",
-      "question": "Which gas do animals exhale as a byproduct of respiration?",
+      "question": "Janwar respiration ke zaya mahsulaat (byproduct) ke taur par kaunsi gas khaarij karte hain?",
       "options": [
         "Oxygen",
         "Nitrogen",
-        "Carbon dioxide",
+        "Carbon Dioxide",
         "Hydrogen"
       ],
       "correct": 2,
-      "explanation": "Animals exhale carbon dioxide, a waste product of cellular respiration.",
-      "hint": "Plants absorb this gas."
+      "explanation": "Janwar carbon dioxide khaarij karte hain, jo cellular respiration ki zaya paidawar hai.",
+      "hint": "Paudhay is gas ko jazb karte hain.",
+      "mode": "knowledge"
     },
     {
       "id": "q0055",
       "category": "Nature",
       "difficulty": "hard",
-      "question": "What is a group of lions called?",
+      "question": "Sheron ke jhund (group) ko kya kaha jata hai?",
       "options": [
-        "A pack",
-        "A pride",
-        "A herd",
-        "A flock"
+        "A Pack",
+        "A Pride",
+        "A Herd",
+        "A Flock"
       ],
       "correct": 1,
-      "explanation": "A group of lions is called a pride, typically consisting of related females and their cubs.",
-      "hint": "It's a term also used for self-respect."
+      "explanation": "Sheron ke jhund ko 'pride' kaha jata hai, jo aam taur par milti julti maadain (females) aur unke bachon par mushtamil hota hai.",
+      "hint": "Yeh lafz khud-ehtaram (self-respect) ke liye bhi istemal hota hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0056",
       "category": "Nature",
       "difficulty": "hard",
-      "question": "Which biome is characterized by permafrost and very few trees?",
+      "question": "Kaunsa biome hamesha jamay hue zameen (permafrost) aur bohat kam darakhton se mumtaz hai?",
       "options": [
         "Taiga",
         "Tundra",
@@ -837,14 +892,15 @@
         "Steppe"
       ],
       "correct": 1,
-      "explanation": "The tundra has permanently frozen subsoil (permafrost) and minimal tree growth.",
-      "hint": "Think of the Arctic regions."
+      "explanation": "Tundra mein hamesha jami hui zamin (permafrost) hoti hai aur darakht bohat kam hote hain.",
+      "hint": "Arctic ilaqon ke baray mein sochiye.",
+      "mode": "knowledge"
     },
     {
       "id": "q0057",
       "category": "Nature",
       "difficulty": "hard",
-      "question": "What is the process by which caterpillars become butterflies called?",
+      "question": "Sundi (caterpillar) ka titli (butterfly) banne ke amal ko kya kehte hain?",
       "options": [
         "Mitosis",
         "Metamorphosis",
@@ -852,14 +908,15 @@
         "Pollination"
       ],
       "correct": 1,
-      "explanation": "Metamorphosis is the biological process of transformation seen in insects like butterflies.",
-      "hint": "The word means 'change of form'."
+      "explanation": "Metamorphosis ek biological amal hai jo titli jaise kiron mein tabdeeli ki soorat mein nazar aata hai.",
+      "hint": "Is lafz ka matlab hai 'shakal ki tabdeeli'.",
+      "mode": "knowledge"
     },
     {
       "id": "q0058",
       "category": "Nature",
       "difficulty": "expert",
-      "question": "Which symbiotic relationship benefits both organisms involved?",
+      "question": "Kaunsa symbiotic taluq dono organisms ko faida deta hai?",
       "options": [
         "Parasitism",
         "Commensalism",
@@ -867,14 +924,15 @@
         "Predation"
       ],
       "correct": 2,
-      "explanation": "Mutualism is a relationship where both species benefit, like bees and flowering plants.",
-      "hint": "The word contains 'mutual'."
+      "explanation": "Mutualism woh taluq hai jahan dono species ko faida hota hai, jaise bees aur phool-daar paudhay.",
+      "hint": "Is lafz mein 'mutual' shamil hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0059",
       "category": "Nature",
       "difficulty": "expert",
-      "question": "What is the term for animals that are active primarily at night?",
+      "question": "Un janwaron ko kya kaha jata hai jo raat ke waqt zyada faal (active) hote hain?",
       "options": [
         "Diurnal",
         "Nocturnal",
@@ -882,29 +940,31 @@
         "Arboreal"
       ],
       "correct": 1,
-      "explanation": "Nocturnal animals, like owls and bats, are primarily active during the night.",
-      "hint": "Think of the word 'noct-', related to night."
+      "explanation": "Nocturnal janwar, jaise ulloo aur chamgadar, bunyadi taur par raat ko faal hote hain.",
+      "hint": "'Noct-' lafz raat se mutalliq hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0060",
       "category": "Nature",
       "difficulty": "expert",
-      "question": "Which keystone species reintroduction famously changed river paths in Yellowstone?",
+      "question": "Kis keystone species ki dobara aabadkari (reintroduction) ne Yellowstone mein daryaon ka rukh badal diya, jo bohat mashhoor hai?",
       "options": [
         "Bison",
-        "Wolves",
+        "Bhediye (Wolves)",
         "Beavers",
-        "Grizzly bears"
+        "Grizzly Bears"
       ],
       "correct": 1,
-      "explanation": "Reintroduced wolves changed elk grazing patterns, allowing vegetation and riverbanks to stabilize.",
-      "hint": "This predator was reintroduced in the 1990s."
+      "explanation": "Dobara aabad kiye gaye bhediyon ne elk ke charne ke tareeqay badal diye, jisse vegetation aur daryaon ke kinaray sthir huay.",
+      "hint": "Yeh shikari 1990s mein dobara laya gaya tha.",
+      "mode": "knowledge"
     },
     {
       "id": "q0061",
       "category": "General Knowledge",
       "difficulty": "easy",
-      "question": "How many days are there in a leap year?",
+      "question": "Leap year mein kitne din hote hain?",
       "options": [
         "364",
         "365",
@@ -912,29 +972,31 @@
         "367"
       ],
       "correct": 2,
-      "explanation": "A leap year has 366 days, with an extra day added to February.",
-      "hint": "It's one more than a normal year."
+      "explanation": "Leap year mein 366 din hote hain, February mein aik extra din shamil karke.",
+      "hint": "Yeh aam saal se aik zyada hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0062",
       "category": "General Knowledge",
       "difficulty": "easy",
-      "question": "What is the freezing point of water in Celsius?",
+      "question": "Standard atmospheric pressure par pani ka freezing point Celsius mein kya hai?",
       "options": [
-        "0\u00b0C",
-        "32\u00b0C",
-        "100\u00b0C",
-        "-10\u00b0C"
+        "0°C",
+        "32°C",
+        "100°C",
+        "-10°C"
       ],
       "correct": 0,
-      "explanation": "Water freezes at 0 degrees Celsius under standard atmospheric pressure.",
-      "hint": "It's the number that starts the Celsius scale."
+      "explanation": "Pani 0 degree Celsius par jamta hai.",
+      "hint": "Yeh woh number hai jahan se Celsius scale shuru hoti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0063",
       "category": "General Knowledge",
       "difficulty": "easy",
-      "question": "Which shape has three sides?",
+      "question": "Kis shakal ke teen taraf (sides) hotay hain?",
       "options": [
         "Square",
         "Triangle",
@@ -942,14 +1004,15 @@
         "Hexagon"
       ],
       "correct": 1,
-      "explanation": "A triangle is a polygon with exactly three sides and three angles.",
-      "hint": "The prefix 'tri-' means three."
+      "explanation": "Triangle ek polygon hai jiske theek teen sides aur teen angles hotay hain.",
+      "hint": "'Tri-' prefix ka matlab teen hota hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0064",
       "category": "General Knowledge",
       "difficulty": "medium",
-      "question": "How many strings does a standard guitar have?",
+      "question": "Aik standard guitar mein kitni strings hoti hain?",
       "options": [
         "4",
         "5",
@@ -957,14 +1020,15 @@
         "7"
       ],
       "correct": 2,
-      "explanation": "A standard guitar has six strings, tuned E-A-D-G-B-E.",
-      "hint": "It's an even number."
+      "explanation": "Standard guitar mein cheh (6) strings hoti hain, jo E-A-D-G-B-E par tune hoti hain.",
+      "hint": "Yeh aik juft (even) number hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0065",
       "category": "General Knowledge",
       "difficulty": "medium",
-      "question": "What is the currency used in Japan?",
+      "question": "Japan mein kaunsi currency istemal hoti hai?",
       "options": [
         "Won",
         "Yuan",
@@ -972,14 +1036,15 @@
         "Ringgit"
       ],
       "correct": 2,
-      "explanation": "Japan's official currency is the yen, symbolized as \u00a5.",
-      "hint": "It starts with the same letter as the country's first vowel sound."
+      "explanation": "Japan ki sarkari currency Yen hai, jo ¥ se zahir hoti hai.",
+      "hint": "Yeh mulk ke pehle vowel sound wale harf se shuru hoti hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0066",
       "category": "General Knowledge",
       "difficulty": "medium",
-      "question": "Who painted the Mona Lisa?",
+      "question": "Mona Lisa kisne banayi (paint ki)?",
       "options": [
         "Michelangelo",
         "Leonardo da Vinci",
@@ -987,14 +1052,15 @@
         "Donatello"
       ],
       "correct": 1,
-      "explanation": "Leonardo da Vinci painted the Mona Lisa in the early 16th century.",
-      "hint": "He was also a famous inventor and scientist."
+      "explanation": "Leonardo da Vinci ne 16vi century ke shuru mein Mona Lisa banayi.",
+      "hint": "Woh aik mashhoor inventor aur scientist bhi thay.",
+      "mode": "knowledge"
     },
     {
       "id": "q0067",
       "category": "General Knowledge",
       "difficulty": "hard",
-      "question": "What does 'HTTP' stand for?",
+      "question": "'HTTP' ka matlab kya hai?",
       "options": [
         "HyperText Transfer Protocol",
         "High Transfer Text Process",
@@ -1002,14 +1068,15 @@
         "HyperText Technical Process"
       ],
       "correct": 0,
-      "explanation": "HTTP stands for HyperText Transfer Protocol, the foundation of data communication on the web.",
-      "hint": "It's the protocol behind most web addresses."
+      "explanation": "HTTP ka matlab HyperText Transfer Protocol hai, jo web par data communication ki buniyad hai.",
+      "hint": "Yeh zyada tar web addresses ke peechay ka protocol hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0068",
       "category": "General Knowledge",
       "difficulty": "hard",
-      "question": "In which year was the first iPhone released?",
+      "question": "Pehla iPhone kis saal release hua?",
       "options": [
         "2005",
         "2007",
@@ -1017,14 +1084,15 @@
         "2011"
       ],
       "correct": 1,
-      "explanation": "Apple released the first iPhone in June 2007.",
-      "hint": "It was announced by Steve Jobs at Macworld."
+      "explanation": "Apple ne June 2007 mein pehla iPhone release kiya.",
+      "hint": "Yeh Macworld mein Steve Jobs ne announce kiya tha.",
+      "mode": "knowledge"
     },
     {
       "id": "q0069",
       "category": "General Knowledge",
       "difficulty": "hard",
-      "question": "What is the tallest mountain in the world above sea level?",
+      "question": "Samandar ki satah se sabse buland pahar kaunsa hai?",
       "options": [
         "K2",
         "Kangchenjunga",
@@ -1032,14 +1100,15 @@
         "Denali"
       ],
       "correct": 2,
-      "explanation": "Mount Everest, at 8,849 meters, is the tallest mountain above sea level.",
-      "hint": "It sits on the border of Nepal and Tibet."
+      "explanation": "Mount Everest, 8,849 meters ke sath, samandar ki satah se sabse buland pahar hai.",
+      "hint": "Yeh Nepal aur Tibet ki sarhad par waqay hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0070",
       "category": "General Knowledge",
       "difficulty": "expert",
-      "question": "Which country invented the printing press with movable type in Europe?",
+      "question": "Europe mein movable type printing press kis mulk ne ijaad ki?",
       "options": [
         "Italy",
         "Germany",
@@ -1047,14 +1116,15 @@
         "England"
       ],
       "correct": 1,
-      "explanation": "Johannes Gutenberg invented the movable-type printing press in Germany around 1440.",
-      "hint": "The inventor's surname is famous in publishing history."
+      "explanation": "Johannes Gutenberg ne taqreeban 1440 mein Germany mein movable-type printing press ijaad ki.",
+      "hint": "Is inventor ka surname publishing history mein mashhoor hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0071",
       "category": "General Knowledge",
       "difficulty": "expert",
-      "question": "What is the term for a word that reads the same forwards and backwards?",
+      "question": "Us lafz ko kya kehte hain jo aagay aur peechay dono taraf se ek jaisa parha jata hai?",
       "options": [
         "Anagram",
         "Palindrome",
@@ -1062,14 +1132,15 @@
         "Acronym"
       ],
       "correct": 1,
-      "explanation": "A palindrome, like 'level' or 'radar', reads identically in both directions.",
-      "hint": "'Racecar' is a classic example."
+      "explanation": "Palindrome, jaise 'level' ya 'radar', dono taraf se ek jaisa parha jata hai.",
+      "hint": "'Racecar' iski aik klasik misal hai.",
+      "mode": "knowledge"
     },
     {
       "id": "q0072",
       "category": "General Knowledge",
       "difficulty": "expert",
-      "question": "Which international body maintains the Greenwich-based standard for global time?",
+      "question": "Kaunsi beynulaqwami idara Greenwich par mabni global time ka standard barqarar rakhti hai?",
       "options": [
         "United Nations",
         "International Bureau of Weights and Measures (BIPM)",
@@ -1077,8 +1148,649 @@
         "UNESCO"
       ],
       "correct": 1,
-      "explanation": "The BIPM coordinates Coordinated Universal Time (UTC) using atomic clocks worldwide.",
-      "hint": "It's a metrology organization, not a UN body."
+      "explanation": "BIPM duniya bhar ki atomic clocks ka istemal karke Coordinated Universal Time (UTC) ko coordinate karta hai.",
+      "hint": "Yeh aik metrology idara hai, UN ka hissa nahi.",
+      "mode": "knowledge"
+    },
+    {
+      "id": "q0073",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "easy",
+      "question": "Agla number kya hoga: 2, 4, 6, 8, ?",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "7"
+      ],
+      "correct": 1,
+      "explanation": "Har number 2 se barhta hai, is liye 8 ke baad agla number 10 hai.",
+      "hint": "Dekhiye har number kitna barhta hai."
+    },
+    {
+      "id": "q0074",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "easy",
+      "question": "Agla number kya hoga: 5, 10, 15, 20, ?",
+      "options": [
+        "22",
+        "24",
+        "25",
+        "30"
+      ],
+      "correct": 2,
+      "explanation": "Har number 5 se barhta hai, is liye sequence 25 tak jari rehta hai.",
+      "hint": "Yeh 5 ka table hai."
+    },
+    {
+      "id": "q0075",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "medium",
+      "question": "Agla number kya hoga: 3, 6, 12, 24, ?",
+      "options": [
+        "30",
+        "36",
+        "48",
+        "42"
+      ],
+      "correct": 2,
+      "explanation": "Har number apne se pehlay wale ka double hai, is liye 24 ka double 48 hai.",
+      "hint": "Har term ko usi miqdar se guna kiya jata hai."
+    },
+    {
+      "id": "q0076",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "medium",
+      "question": "Agla number kya hoga: 1, 4, 9, 16, ?",
+      "options": [
+        "20",
+        "25",
+        "22",
+        "24"
+      ],
+      "correct": 1,
+      "explanation": "Yeh perfect squares hain: 1², 2², 3², 4², is liye agla 5² = 25 hai.",
+      "hint": "1, 2, 3, 4 ko square karke dekhiye."
+    },
+    {
+      "id": "q0077",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "hard",
+      "question": "Agla number kya hoga: 2, 3, 5, 8, 13, ?",
+      "options": [
+        "18",
+        "20",
+        "21",
+        "19"
+      ],
+      "correct": 2,
+      "explanation": "Har number apne se pehlay do numbers ka majmua (Fibonacci-style) hai: 8 + 13 = 21.",
+      "hint": "Pichlay do numbers ko jama karein."
+    },
+    {
+      "id": "q0078",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "hard",
+      "question": "Agla number kya hoga: 1, 1, 2, 3, 5, 8, ?",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "correct": 2,
+      "explanation": "Yeh Fibonacci sequence hai, jahan har term pichlay do ka majmua hota hai: 5 + 8 = 13.",
+      "hint": "Yeh aik mashhoor sequence hai jo aik Italian mathematician ke naam par hai."
+    },
+    {
+      "id": "q0079",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "expert",
+      "question": "Agla number kya hoga: 2, 6, 12, 20, 30, ?",
+      "options": [
+        "40",
+        "42",
+        "44",
+        "36"
+      ],
+      "correct": 1,
+      "explanation": "Farq har baar 2 se barhta hai (4,6,8,10,12), is liye agla term 30 + 12 = 42 hai.",
+      "hint": "Har jorray ke darmiyan farq dekhiye."
+    },
+    {
+      "id": "q0080",
+      "mode": "logic",
+      "category": "Number Sequence",
+      "difficulty": "expert",
+      "question": "Agla number kya hoga: 3, 7, 16, 35, 74, ?",
+      "options": [
+        "148",
+        "150",
+        "153",
+        "155"
+      ],
+      "correct": 2,
+      "explanation": "Har term taqreeban pichlay ka double hai plus barhta hua izafa: 74×2 + 5 = 153.",
+      "hint": "Har number ko double karke dekhiye kitna bacha."
+    },
+    {
+      "id": "q0081",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "easy",
+      "question": "Pattern mukammal karein: Circle, Square, Circle, Square, ?",
+      "options": [
+        "Circle",
+        "Triangle",
+        "Square",
+        "Star"
+      ],
+      "correct": 0,
+      "explanation": "Pattern Circle aur Square ke darmiyan badalta rehta hai, is liye yeh Circle se dobara shuru hota hai.",
+      "hint": "Pattern har do shapes ke baad dohraya jata hai."
+    },
+    {
+      "id": "q0082",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "easy",
+      "question": "Pattern mukammal karein: A, B, A, B, A, ?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct": 1,
+      "explanation": "Pattern sirf A aur B ke darmiyan badalta hai, is liye agla B hai.",
+      "hint": "Yeh do harfon ka simple dohraav hai."
+    },
+    {
+      "id": "q0083",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "medium",
+      "question": "Letter pattern mukammal karein: A, C, E, G, ?",
+      "options": [
+        "H",
+        "I",
+        "J",
+        "F"
+      ],
+      "correct": 1,
+      "explanation": "Har letter alphabet mein aik harf chhorta hai (A, chhoro B, C, chhoro D, E...), aakhir mein I par jata hai.",
+      "hint": "Har baar do harf aagay ginain."
+    },
+    {
+      "id": "q0084",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "medium",
+      "question": "Pattern mukammal karein: 2, 4, 8, 16, ?",
+      "options": [
+        "18",
+        "20",
+        "32",
+        "24"
+      ],
+      "correct": 2,
+      "explanation": "Har number pichlay ka double hai, is liye 16 ka double 32 hai.",
+      "hint": "Har term ko 2 se guna kiya jata hai."
+    },
+    {
+      "id": "q0085",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "hard",
+      "question": "Pattern mukammal karein: Z, Y, X, W, ?",
+      "options": [
+        "U",
+        "T",
+        "V",
+        "S"
+      ],
+      "correct": 2,
+      "explanation": "Pattern alphabet mein ulta (backward) aik harf aagay barhta hai, is liye W ke baad V aata hai.",
+      "hint": "Alphabet ko ulta soachiye."
+    },
+    {
+      "id": "q0086",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "hard",
+      "question": "Pattern mukammal karein: 1A, 2B, 3C, 4D, ?",
+      "options": [
+        "5D",
+        "5E",
+        "6E",
+        "5F"
+      ],
+      "correct": 1,
+      "explanation": "Number 1 se barhta hai aur letter alphabet mein aik qadam aagay barhta hai, jis se 5E milta hai.",
+      "hint": "Number aur letter ko alag alag track karein."
+    },
+    {
+      "id": "q0087",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "expert",
+      "question": "Pattern mukammal karein: AZ, BY, CX, DW, ?",
+      "options": [
+        "EV",
+        "EU",
+        "FV",
+        "EW"
+      ],
+      "correct": 0,
+      "explanation": "Pehla letter aagay barhta hai (A,B,C,D,E) jabke dusra letter ulta (Z,Y,X,W,V) jata hai, jis se EV milta hai.",
+      "hint": "Do alphabets aik hi waqt mein mukhalif simton mein chal rahay hain."
+    },
+    {
+      "id": "q0088",
+      "mode": "logic",
+      "category": "Pattern Recognition",
+      "difficulty": "expert",
+      "question": "Pattern mukammal karein: 2, 3, 5, 7, 11, 13, ?",
+      "options": [
+        "15",
+        "16",
+        "17",
+        "19"
+      ],
+      "correct": 2,
+      "explanation": "Yeh sequence prime numbers ko tarteeb se list karta hai, aur 13 ke baad agla prime 17 hai.",
+      "hint": "Yeh numbers sirf 1 aur khud se taqseem hotay hain."
+    },
+    {
+      "id": "q0089",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "easy",
+      "question": "Kaunsa cheez alag hai (odd one out): Apple, Banana, Carrot, Orange",
+      "options": [
+        "Apple",
+        "Banana",
+        "Carrot",
+        "Orange"
+      ],
+      "correct": 2,
+      "explanation": "Carrot aik sabzi hai, jabke Apple, Banana, aur Orange sab phal hain.",
+      "hint": "In mein se teen darakhton ya bailon par phal ki tarah ugtay hain."
+    },
+    {
+      "id": "q0090",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "easy",
+      "question": "Kaunsa cheez alag hai (odd one out): Dog, Cat, Table, Bird",
+      "options": [
+        "Dog",
+        "Cat",
+        "Table",
+        "Bird"
+      ],
+      "correct": 2,
+      "explanation": "Table aik cheez (object) hai, jabke Dog, Cat, aur Bird sab zinda janwar hain.",
+      "hint": "In mein se teen khud harkat kar saktay hain."
+    },
+    {
+      "id": "q0091",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "medium",
+      "question": "Kaunsa cheez alag hai (odd one out): Square, Triangle, Circle, Cube",
+      "options": [
+        "Square",
+        "Triangle",
+        "Circle",
+        "Cube"
+      ],
+      "correct": 3,
+      "explanation": "Cube aik 3D shape hai, jabke Square, Triangle, aur Circle sab flat 2D shapes hain.",
+      "hint": "In mein se teen ko kaghaz par bilkul flat banaya ja sakta hai."
+    },
+    {
+      "id": "q0092",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "medium",
+      "question": "Kaunsa number alag hai (odd one out) in mein se: 3, 5, 9, 7, 11",
+      "options": [
+        "3",
+        "5",
+        "9",
+        "11"
+      ],
+      "correct": 2,
+      "explanation": "9 prime number nahi hai (3×3=9), jabke 3, 5, 7, aur 11 sab prime hain.",
+      "hint": "Us number ko dhoondhen jiske do se zyada factors hain."
+    },
+    {
+      "id": "q0093",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "hard",
+      "question": "Kaunsa cheez alag hai (odd one out): Paris, London, Berlin, Sahara",
+      "options": [
+        "Paris",
+        "London",
+        "Berlin",
+        "Sahara"
+      ],
+      "correct": 3,
+      "explanation": "Sahara aik registan (desert) hai, jabke Paris, London, aur Berlin sab darul hakoomat shehar hain.",
+      "hint": "In mein se teen jaghon par aap mayor dhoondh saktay hain."
+    },
+    {
+      "id": "q0094",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "hard",
+      "question": "Kaunsa number alag hai (odd one out) in mein se: 16, 25, 36, 40, 49",
+      "options": [
+        "16",
+        "25",
+        "40",
+        "49"
+      ],
+      "correct": 2,
+      "explanation": "40 perfect square nahi hai, jabke 16 (4²), 25 (5²), 36 (6²), aur 49 (7²) sab perfect squares hain.",
+      "hint": "Har number ka square root nikalne ki koshish karein."
+    },
+    {
+      "id": "q0095",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "expert",
+      "question": "Kaunsa cheez alag hai (odd one out) in mein se: Mercury, Venus, Earth, Pluto, Mars",
+      "options": [
+        "Venus",
+        "Earth",
+        "Pluto",
+        "Mars"
+      ],
+      "correct": 2,
+      "explanation": "Pluto ko 2006 mein dwarf planet qarar diya gaya, jabke baqi sab mukammal sayare hain.",
+      "hint": "In mein se aik ne apna 'planet' status kho diya."
+    },
+    {
+      "id": "q0096",
+      "mode": "logic",
+      "category": "Odd One Out",
+      "difficulty": "expert",
+      "question": "Kaunsa cheez alag hai (odd one out): Oxygen, Nitrogen, Helium, Water",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Helium",
+        "Water"
+      ],
+      "correct": 3,
+      "explanation": "Water hydrogen aur oxygen se milkar bana compound hai, jabke baqi sab akaila (single) elements hain.",
+      "hint": "In mein se teen ko saada mawaad mein tor nahi jaa sakta."
+    },
+    {
+      "id": "q0097",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "easy",
+      "question": "Agar tamam billiyan (cats) janwar hain, aur Whiskers aik billi hai, to Whiskers kya hai?",
+      "options": [
+        "Aik paudha (Plant)",
+        "Aik janwar (Animal)",
+        "Aik kutta (Dog)",
+        "Maloom nahi (Unknown)"
+      ],
+      "correct": 1,
+      "explanation": "Chunke tamam billiyan janwar hain aur Whiskers aik billi hai, is liye Whiskers zaroor janwar hoga.",
+      "hint": "Billi se janwar tak ke logical silsilay ko follow karein."
+    },
+    {
+      "id": "q0098",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "easy",
+      "question": "Tom, Sam se lamba hai. Sam, Alex se lamba hai. Sabse chota kaun hai?",
+      "options": [
+        "Tom",
+        "Sam",
+        "Alex",
+        "Bataya nahi ja sakta"
+      ],
+      "correct": 2,
+      "explanation": "Chunke Tom > Sam > Alex qad mein, is liye Alex teenon mein sabse chota hoga.",
+      "hint": "Inhein sabse lambay se sabse chotay tak tarteeb dein."
+    },
+    {
+      "id": "q0099",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "medium",
+      "question": "Agar barish hoti hai to zameen geeli ho jati hai. Zameen geeli hai. Konsa nateeja durust hoga?",
+      "options": [
+        "Zaroor barish hui hogi",
+        "Barish hui hogi, ya kisi aur cheez ne geela kiya hoga",
+        "Yahan kabhi barish nahi hoti",
+        "Zameen hamesha geeli rehti hai"
+      ],
+      "correct": 1,
+      "explanation": "Geeli zameen yeh sabit nahi karti ke barish hui — pipe ya kisi cheez ke gir jane se bhi aisa ho sakta hai. Sirf 'barish hui ya kuch aur' hi mehfooz nateeja hai.",
+      "hint": "Geeli zameen ki aik se zyada wajah ho sakti hain."
+    },
+    {
+      "id": "q0100",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "medium",
+      "question": "Tamam squares rectangles hote hain. Yeh shakal rectangle nahi hai. Aap kya nateeja nikal saktay hain?",
+      "options": [
+        "Yeh square hai",
+        "Yeh square nahi hai",
+        "Yeh square ho sakta hai",
+        "Kaafi maloomat nahi"
+      ],
+      "correct": 1,
+      "explanation": "Chunke har square aik rectangle hota hai, is liye jo cheez rectangle nahi woh square bhi nahi ho sakti.",
+      "hint": "Sochiye 'tamam squares rectangles hain' kya khaarij karta hai."
+    },
+    {
+      "id": "q0101",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "hard",
+      "question": "Anna, Ben se pehlay finish karti hai. Ben, Cara se pehlay finish karta hai. Cara, Dan se pehlay finish karti hai. Ellen, Anna se pehlay finish karti hai. Sabse aakhir mein kaun finish karta hai?",
+      "options": [
+        "Anna",
+        "Cara",
+        "Dan",
+        "Ellen"
+      ],
+      "correct": 2,
+      "explanation": "Finishing order hai: Ellen, Anna, Ben, Cara, Dan — is liye Dan sabse aakhir mein finish karta hai.",
+      "hint": "Tamam 'pehlay' clues ko jorkar aik hi tarteeb banayein."
+    },
+    {
+      "id": "q0102",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "hard",
+      "question": "Sirf members hi club mein dakhil ho saktay hain. Sam club mein dakhil hua. Kya baat sach honi chahiye?",
+      "options": [
+        "Sam aik member hai",
+        "Sam member nahi hai",
+        "Club ka koi qaida nahi",
+        "Bataya nahi ja sakta"
+      ],
+      "correct": 0,
+      "explanation": "Chunke sirf members hi dakhil ho saktay hain, aur Sam dakhil hua, is liye Sam zaroor member hoga.",
+      "hint": "Qaida sirf aik qisam ke insan ko darwazay se guzarne deta hai."
+    },
+    {
+      "id": "q0103",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "expert",
+      "question": "Teen dabbon par 'Apples', 'Oranges', aur 'Mixed' likha hai — magar har label ghalat hai. Aap sirf aik dabbay se aik phal nikal kar tamam teenon ko sahih label kar saktay hain. Kis dabbay se nikalna chahiye?",
+      "options": [
+        "'Apples' wala dabba",
+        "'Oranges' wala dabba",
+        "'Mixed' wala dabba",
+        "Koi bhi dabba theek hai"
+      ],
+      "correct": 2,
+      "explanation": "Chunke har label ghalat hai, is liye 'Mixed' likha dabba asal mein sirf aik hi phal ki qisam rakhta hoga, jo tamam teenon ka asal mawaad zahir kar dega.",
+      "hint": "Woh dabba jo mufeed tareeqay se zaroor ghalat hai woh 'Mixed' wala hai."
+    },
+    {
+      "id": "q0104",
+      "mode": "logic",
+      "category": "Logical Deduction",
+      "difficulty": "expert",
+      "question": "Aik jazeeray par knights hamesha sach boltay hain aur knaves hamesha jhoot boltay hain. A kehta hai: 'B knave hai.' B kehta hai: 'A aur mein dono knights hain.' A aur B kya hain?",
+      "options": [
+        "A knight hai, B knave hai",
+        "A knave hai, B knight hai",
+        "Dono knights hain",
+        "Dono knaves hain"
+      ],
+      "correct": 0,
+      "explanation": "Agar A knight hai, to A ka dawa ke B knave hai sach hoga — aur B ka jhoota dawa knave hone se match karta hai. Yehi wahid mustaqil (consistent) hal hai.",
+      "hint": "A aur B ke liye har knight/knave combination ko test karein jab tak baatein aik dosray se na takrayein."
+    },
+    {
+      "id": "q0105",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "easy",
+      "question": "Agar aapke paas 3 seb hain aur aap 5 aur khareedtay hain, to aapke paas kitne hain?",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
+      "correct": 1,
+      "explanation": "3 + 5 = 8 seb total.",
+      "hint": "Simple jama (addition)."
+    },
+    {
+      "id": "q0106",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "easy",
+      "question": "50 ka aadha (half) kya hai?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "15"
+      ],
+      "correct": 1,
+      "explanation": "50 ka aadha 25 hai, kyunke 25 + 25 = 50.",
+      "hint": "2 se taqseem karein."
+    },
+    {
+      "id": "q0107",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "medium",
+      "question": "Aik shirt ki qeemat $40 hai. Isay 25% discount par sale kiya ja raha hai. Sale price kya hoga?",
+      "options": [
+        "$25",
+        "$28",
+        "$30",
+        "$35"
+      ],
+      "correct": 2,
+      "explanation": "$40 ka 25% $10 hai, is liye sale price $40 − $10 = $30 hai.",
+      "hint": "Pehlay $40 ka 25% nikalein, phir usay minus karein."
+    },
+    {
+      "id": "q0108",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "medium",
+      "question": "Aik train 1 ghantay mein 60 miles safar karti hai. Usi raftaar par 3 ghanton mein woh kitna safar karegi?",
+      "options": [
+        "120 miles",
+        "150 miles",
+        "180 miles",
+        "200 miles"
+      ],
+      "correct": 2,
+      "explanation": "60 miles per hour par, 3 ghanton mein train 60 × 3 = 180 miles tay karti hai.",
+      "hint": "Raftaar ko ghanton ki tadad se guna karein."
+    },
+    {
+      "id": "q0109",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "hard",
+      "question": "Aik rectangle ki lambai 12 aur chorai 5 hai. Iska area kya hai?",
+      "options": [
+        "50",
+        "55",
+        "60",
+        "65"
+      ],
+      "correct": 2,
+      "explanation": "Area = length × width = 12 × 5 = 60.",
+      "hint": "Dono sides ko aapas mein guna karein."
+    },
+    {
+      "id": "q0110",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "hard",
+      "question": "Agar 3x + 5 = 20, to x kya hai?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "explanation": "Dono taraf se 5 minus karne par 3x = 15 milta hai, is liye x = 5.",
+      "hint": "Pehlay jama phir zarb ko ulta karke x ko alag karein."
+    },
+    {
+      "id": "q0111",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "expert",
+      "question": "Aik gaari (car) har saal apni maujooda qeemat ka 10% kam ho jati hai (depreciation). Agar iski shuruati qeemat $20,000 hai, to 2 saal baad iski qeemat kya hogi (qareeb tareen dollar tak)?",
+      "options": [
+        "$16,000",
+        "$16,200",
+        "$18,000",
+        "$19,800"
+      ],
+      "correct": 1,
+      "explanation": "Saal 1: $20,000 × 0.9 = $18,000. Saal 2: $18,000 × 0.9 = $16,200.",
+      "hint": "10% kami ko do martaba lagayein, sirf aik martaba nahi."
+    },
+    {
+      "id": "q0112",
+      "mode": "logic",
+      "category": "Math Reasoning",
+      "difficulty": "expert",
+      "question": "Teen mutasil (consecutive) integers ka majmua 84 hai. In mein sabse bara number kya hai?",
+      "options": [
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "correct": 2,
+      "explanation": "Yeh integers 27, 28, aur 29 hain, kyunke 27 + 28 + 29 = 84, is liye sabse bara 29 hai.",
+      "hint": "Maan lijiye beech wala number n hai, to teen numbers n-1, n, n+1 hongay."
     }
   ]
 }
